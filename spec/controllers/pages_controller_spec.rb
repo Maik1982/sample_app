@@ -23,7 +23,7 @@ describe PagesController do
     end
     it "should have the right title" do
       get 'home'
-      response.should have_tag ("title","Affe ! Home")
+      response.should have_tag("title","Home")
     end
   end
 
@@ -34,7 +34,7 @@ describe PagesController do
     end
     it "should have the right title" do
       get 'contact'
-      response.should have_tag ("title","Affe ! Contact")
+      response.should have_tag("title","Contact")
     end
   end
 
@@ -45,7 +45,7 @@ describe PagesController do
     end
     it "should have the right title" do
       get 'about'
-      response.should have_tag ("title","Affe ! About")
+      response.should have_tag("title","About")
     end
   end
   
@@ -56,7 +56,7 @@ describe PagesController do
     end
     it "should have the right title" do
       get 'help'
-      response.should have_tag ("title", "Affe ! Help")
+      response.should have_tag("title", "Help")
     end
   end
 end
