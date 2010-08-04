@@ -23,7 +23,7 @@ integrate_views
     
     it "should include the user's name" do
       get :show, :id => @user
-      response.should have_tag("h2", /#{user.name}/)
+      response.should have_tag("h2", /#{@user.name}/)
     end
     
     it "should have profile image" do
